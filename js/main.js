@@ -124,13 +124,10 @@ console.log(myPow);
  */
 
 // Мама мыла раму, рама мыла маму
-var text = 'Мама мыла раму, рама мыла маму'
+var strObj = {};
+strObj.str = 'Мама мыла раму, рама мыла маму'
+strObj.length = strObj.str.length
 
-// strObj
-var strObj = {
-  str: text,
-  length: text.length
-}
 console.log(strObj);
 
 /*
@@ -141,7 +138,7 @@ console.log(strObj);
  */
 
 // isRamaPos
-var isRamaPos = strObj.str.includes('рама');
+var isRamaPos = strObj.str.indexOf('рама');
 console.log(isRamaPos);
 
 /*
